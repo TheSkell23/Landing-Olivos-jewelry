@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olivos Jewelry — Oro laminado con calidad y elegancia</title>
+  <meta name="description" content="Descubre la exclusividad en joyería de oro laminado de Olivos Jewelry. Piezas duraderas y sofisticadas para realzar tu estilo." />
+  <meta name="theme-color" content="#1b3b22" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Olivos Jewelry — Oro laminado con calidad" />
+  <meta property="og:description" content="Joyas exclusivas en oro laminado con garantía de calidad y brillo excepcional." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://olivosjewelry.com" />
+  <meta property="og:locale" content="es_CO" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Olivos Jewelry" />
+  <meta name="twitter:description" content="Oro laminado de alta calidad." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Fuentes (Fraunces para títulos elegantes e Inter para lectura limpia) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon de anillo de joyería 💍 -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext x='50%25' y='56%25' font-size='52' text-anchor='middle'%3E💍%3C/text%3E%3C/svg%3E" />
+</head>
+
+<body class="theme-container">
+
+  <!-- 1. Enlace de salto para accesibilidad -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- 2. Checkbox oculto para el hack de tema claro/oscuro con :has() -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-hidden="true" />
+
+  <!-- ============ HEADER DE LA JOYERÍA ============ -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      
+      <!-- Marca / Logo con toque de joyería -->
+      <a href="#top" class="brand" aria-label="Olivos Jewelry, inicio">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <path d="M18 20h12l-6 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Olivos Jewelry</span>
+          <span class="brand__tag">Oro Laminado</span>
+        </span>
+      </a>
+
+      <!-- Menú móvil con <details> (sin JavaScript) -->
+      <details class="nav-mobile">
+        <summary class="nav-mobile__toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </summary>
+        <nav class="nav-mobile__panel" aria-label="Navegación principal móvil">
+          <a href="#historia">Historia</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#garantia">Garantía</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#catalogo" class="btn btn--primary btn--sm">Ver joyas</a>
+        </nav>
+      </details>
+
+      <!-- Menú de escritorio -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#historia">Historia</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#garantia">Garantía</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- Acciones de la cabecera (Toggle de tema + CTA de compra) -->
+      <div class="site-header__actions">
+        <label for="theme-toggle" class="theme-toggle" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+          <!-- Sol (Modo Claro) -->
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="currentColor" />
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2"  x2="12" y2="5"  />
+              <line x1="12" y1="19" x2="12" y2="22" />
+              <line x1="2"  y1="12" x2="5"  y2="12" />
+              <line x1="19" y1="12" x2="22" y2="12" />
+              <line x1="4.5"  y1="4.5"  x2="6.5"  y2="6.5"  />
+              <line x1="17.5" y1="17.5" x2="19.5" y2="19.5" />
+              <line x1="4.5"  y1="19.5" x2="6.5"  y2="17.5" />
+              <line x1="17.5" y1="6.5"  x2="19.5" y2="4.5"  />
+            </g>
+          </svg>
+          <!-- Luna (Modo Oscuro) -->
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 14.5A8 8 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" fill="currentColor" />
+          </svg>
+        </label>
+        
+        <a href="#catalogo" class="btn btn--primary btn--sm">Ver Catálogo</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light">Est. 2026 · Ureña, Táchira - Venezuela</p>
+        <h1 id="hero-title" class="hero__title">
+          La elegancia brilla<br />
+          <em>mucho antes</em> de lucirla.
+        </h1>
+        <p class="hero__lead">
+          Diseñamos y seleccionamos cada pieza en oro laminado con calidad de exportación, 
+          pensadas para realzar tu belleza todos los días. Descubre el brillo que perdura.
+        </p>
+        <div class="hero__ctas">
+          <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
+          <a href="#contacto" class="btn btn--ghost btn--ghost-light">Asesoría personalizada</a>
+        </div>
+
+        <ul class="hero__meta" aria-label="Datos rápidos">
+          <li><strong>30</strong> diseños exclusivos de la más alta calidad.</li>
+          <li><strong>Garantía</strong> de brillo y calidad que perdura con los años.</li>
+          <li><strong>4.5</strong> en Google (500 reseñas)</li>
+        </ul>
+      </div>
+
+      <a href="#historia" class="hero__scroll" aria-label="Bajar a la sección historia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE DE INDICADORES ============ -->
+    <section class="trust" aria-label="Reconocimientos y Garantías">
+      <div class="container trust__grid">
+        <div class="trust__item"><span>Oro Laminado de Ley</span><small>Máxima durabilidad</small></div>
+        <div class="trust__item"><span>Garantía de Brillo +</span><small>Certificado</small></div>
+        <div class="trust__item"><span>Envíos Seguros</span><small>A todo el país</small></div>
+        <div class="trust__item"><span>Clase máxima en</span><small>"Tendencia en joyería"</small></div>
+      </div>
+    </section>
+
+    <!-- ============ HISTORIA ============ -->
+    <section class="historia section" id="historia" aria-labelledby="historia-title">
+      <div class="container historia__grid">
+        <figure class="historia__media">
+          <img
+            src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1100&q=80"
+            alt="Diego, el jefe y fundador de Olivos Jewelry trabajando en una pieza fina"
+            loading="lazy"
+            width="1100" height="1375" />
+          <figcaption>
+                Olivos Jewelry. Con nosotros cumples tus mayores sueños.
+          </figcaption>
+        </figure>
+
+        <div class="historia__body">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2 id="historia-title" class="section__title">
+            Un <em>detalle</em> de elegancia<br />
+            que se volvió pasión.
+          </h2>
+          <p class="lede">
+            Empezamos con una mesa de trabajo, un par de diseños y la obsesión de crear
+            joyería en oro laminado que realmente perdure como el primer día.
+          </p>
+          <p>
+            Seleccionamos cada material y supervisamos que cada pieza cumpla con los más altos estándares.
+            Queremos que tu joyería luzca y brille con la intensidad que mereces. No es marketing;
+            es la única forma que encontramos de que la joyería luzca como tiene que lucir.
+          </p>
+
+          <ul class="historia__stats" aria-label="Números de Olivos Jewelry">
+            <li>
+              <span class="historia__stat-num">30</span>
+              <span class="historia__stat-label">Diseños exclusivos</span>
+            </li>
+            <li>
+              <span class="historia__stat-num">100%</span>
+              <span class="historia__stat-label">Garantía de brillo</span>
+            </li>
+            <li>
+              <span class="historia__stat-num">2</span>
+              <span class="historia__stat-label">Personas en el equipo</span>
+            </li>
+          </ul>
+
+          <a href="#catalogo" class="link-arrow">
+            Ver el catálogo actual
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO / PRODUCTOS ============ -->
+    <section class="menu section section--muted" id="catalogo" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Colección exclusiva</p>
+          <h2 id="catalog-title" class="section__title">Nuestras pulseras de temporada.</h2>
+          <p class="section__sub">
+            Piezas únicas en oro laminado diseñadas para combinar con tu estilo diario.
+          </p>
+        </header>
+
+        <!-- Tabs con radios (sin JS) -->
+        <div class="menu-tabs" role="tablist" aria-label="Categorias del catalogo">
+          <input type="radio" name="menu-tab" id="tab-pulseras" class="menu-tabs__input" checked />
+          <label for="tab-pulseras" class="menu-tabs__label">Pulseras</label>
+
+          <input type="radio" name="menu-tab" id="tab-cadenas" class="menu-tabs__input" />
+          <label for="tab-cadenas" class="menu-tabs__label">Cadenas & Dijes</label>
+
+          <input type="radio" name="menu-tab" id="tab-anillos" class="menu-tabs__input" />
+          <label for="tab-anillos" class="menu-tabs__label">Anillos</label>
+        </div>
+          
+        <div class="menu-tabs__panels">
+          <!-- PULSERAS -->
+          <div class="menu-tabs__panel menu-tabs__panel--pulseras">
+            <ul class="cards">
+              
+              <!-- 1. Pulsera hilo rojo -->
+              <li class="card">
+                <figure class="card__media">
+                  <img src="https://images.unsplash.com/photo-1611591475871-2ee3fbd2a99c?auto=format&fit=crop&w=900&q=80"
+                      alt="Pulsera de oro laminado con detalle de hilo rojo"
+                      loading="lazy" width="900" height="900" />
+                </figure>
+                <div class="card__body">
+                  <div class="card__head">
+                    <h3 class="card__title">Pulsera Talismán Rojo</h3>
+                    <span class="card__price">$120.000 COP</span>
+                  </div>
+                  <p class="card__desc">Delicados detalles en oro laminado sobre un resistente hilo de tejido rojo ajustable.</p>
+                  <ul class="tags tags--sm">
+                    <li>Oro laminado 18k</li>
+                    <li>Hilo rojo ajustable</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 2. Pulsera hilo negro -->
+              <li class="card">
+                <figure class="card__media">
+                  <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=80"
+                      alt="Pulsera de oro laminado con detalle de hilo negro"
+                      loading="lazy" width="900" height="900" />
+                </figure>
+                <div class="card__body">
+                  <div class="card__head">
+                    <h3 class="card__title">Pulsera Elegance Negro</h3>
+                    <span class="card__price">$120.000 COP</span>
+                  </div>
+                  <p class="card__desc">Diseño minimalista con acabado pulido en oro laminado y soporte de hilo negro de alta durabilidad.</p>
+                  <ul class="tags tags--sm">
+                    <li>Oro laminado 18k</li>
+                    <li>Hilo negro ajustable</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 3. Pulsera hilo beige -->
+              <li class="card">
+                <figure class="card__media">
+                  <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80"
+                      alt="Pulsera de oro laminado con detalle de hilo beige"
+                      loading="lazy" width="900" height="900" />
+                </figure>
+                <div class="card__body">
+                  <div class="card__head">
+                    <h3 class="card__title">Pulsera Natural Beige</h3>
+                    <span class="card__price">$120.000 COP</span>
+                  </div>
+                  <p class="card__desc">Un toque sutil y sofisticado que combina la calidez del tono beige con el brillo del oro laminado.</p>
+                  <ul class="tags tags--sm">
+                    <li>Oro laminado 18k</li>
+                    <li>Hilo beige ajustable</li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+        <!-- ============ PARALLAX BANNER ============ -->
+    <section class="parallax" aria-label="Ambiente de Cafe Luna">
+      <div class="parallax__bg" aria-hidden="true"></div>
+      <div class="container parallax__inner">
+        <blockquote class="parallax__quote">
+          <p>
+            <em>"el brillo es el pretexto.</em>
+            Lo que te regalamos es estatus de lujo."
+          </p>
+          <cite>— Diego Fuentes fundador</cite>
+        </blockquote>
+      </div>
+    </section>
+
+        <!-- ============ HORARIOS + UBICACION ============ -->
+    <section class="visitanos section" id="horarios" aria-labelledby="visitanos-title">
+      <div class="container visitanos__grid">
+        <div class="visitanos__body">
+          <p class="eyebrow">Visitanos</p>
+          <h2 id="visitanos-title" class="section__title">Calle #5 sector la integracion barrio Altamira.</h2>
+          <p class="lede">
+            punto de partida porton lateral de la escuela tecnica.
+            segundo punto de partida parte trase de la iglesia divina misericordia<br />tomando de punto la primera cuadra hasta la 4 .
+          </p>
+
+          <dl class="visitanos__data">
+            <div>
+              <dt>Horarios</dt>
+              <dd>
+                <ul class="hours">
+                  <li><span>Lun — Vie</span><span>6:00 — 20:00</span></li>
+                  <li><span>Sabado</span><span>7:00 — 21:00</span></li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Contacto</dt>
+              <dd>
+                <a href="tel:+573507302224">+57 (350) 730 2224</a><br />
+                <a href="mailto:hola@cafeluna.com">hola@cafeluna.com</a>
+              </dd>
+            </div>
+          </dl>
+
+          <a class="btn btn--ghost" href="https://maps.google.com/?q=Cafe+Luna+Medellin" target="_blank" rel="noopener">
+            Abrir en Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+                <!-- Mapa SVG stylized -->
+        <figure class="visitanos__map" aria-label="Mapa estilizado de la ubicacion">
+          <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa ilustrado">
+            <defs>
+              <pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse">
+                <circle cx="1" cy="1" r=".7" fill="currentColor" opacity=".15" />
+              </pattern>
+            </defs>
+            <rect width="480" height="420" fill="url(#dots)" />
+            <!-- Calles -->
+            <g stroke="currentColor" stroke-width="10" stroke-linecap="round" opacity=".35" fill="none">
+              <path d="M0 140 L480 110" />
+              <path d="M0 260 L480 230" />
+              <path d="M80 0 L110 420" />
+              <path d="M260 0 L300 420" />
+              <path d="M410 0 L450 420" />
+            </g>
+            <g stroke="currentColor" stroke-width="3" opacity=".45" fill="none">
+              <path d="M0 60 L480 30" />
+              <path d="M0 360 L480 330" />
+            </g>
+            <!-- Parque -->
+            <rect x="300" y="260" width="110" height="90" rx="10" fill="currentColor" opacity=".12" />
+            <text x="355" y="310" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="currentColor" opacity=".6">Parque</text>
+            <!-- Pin -->
+            <g transform="translate(200,190)">
+              <circle r="32" fill="currentColor" opacity=".12">
+                <animate attributeName="r" values="26;38;26" dur="3s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values=".18;.05;.18" dur="3s" repeatCount="indefinite" />
+              </circle>
+              <path d="M0 -22 C12 -22 20 -13 20 -2 C20 11 0 26 0 26 C0 26 -20 11 -20 -2 C-20 -13 -12 -22 0 -22Z"
+                    fill="var(--accent)" />
+              <circle cx="0" cy="-4" r="6" fill="var(--cream)" />
+              <text x="0" y="50" text-anchor="middle" font-family="Fraunces, serif" font-size="16" font-weight="600" fill="currentColor">Cafe Luna</text>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ RESERVA ============ -->
+    <section class="reserva section" id="reserva" aria-labelledby="reserva-title">
+      <div class="container reserva__grid">
+        <div class="reserva__intro">
+          <p class="eyebrow">Asesoría exclusiva</p>
+          <h2 id="reserva-title" class="section__title">Agenda tu cita<br />personalizada.</h2>
+          <p class="lede">
+            Recomendamos reservar tu cita con anticipación para recibir asesoría de tallas y ver nuestra colección en oro laminado. Respondemos en menos de 2 horas.
+          </p>
+          <ul class="reserva__perks">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Atención personalizada y exclusiva
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Asesoría de tallas y combinaciones en oro laminado
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Empaque de regalo especial incluido
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" action="mailto:contacto@olivosjewelry.com" method="post" enctype="text/plain">
+          <div class="form__row">
+            <label class="field">
+              <span class="field__label">Nombre</span>
+              <input class="field__input" type="text" name="nombre" placeholder="Tu nombre completo" required autocomplete="name" />
+            </label>
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="field__input" type="email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="field">
+              <span class="field__label">Fecha</span>
+              <input class="field__input" type="date" name="fecha" required />
+            </label>
+            <label class="field">
+              <span class="field__label">Hora</span>
+              <input class="field__input" type="time" name="hora" required />
+            </label>
+            <label class="field">
+              <span class="field__label">Interés principal</span>
+              <select class="field__input" name="interes" required>
+                <option value="pulseras" selected>Pulseras de temporada</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field__label">Mensaje (opcional)</span>
+            <textarea class="field__input field__input--area" name="mensaje" rows="4" placeholder="¿Alguna duda sobre tallas o petición especial para tus joyas?"></textarea>
+          </label>
+
+          <div class="form__actions">
+            <p class="form__legal">
+              Al reservar aceptas recibir confirmación por email.
+              <br />No spam, nunca.
+            </p>
+            <button type="submit" class="btn btn--primary btn--lg">
+              Confirmar cita
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <a href="#top" class="brand brand--footer">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <path d="M18 20h12l-6 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Olivos Jewelry</span>
+          <span class="brand__tag">Oro Laminado</span>
+        </span>
+      </a>
+      <p class="site-footer__blurb">
+        Joyería en oro laminado con calidad de exportación y brillo que perdura.
+        Desde 2026 en Ureña, Táchira.
+      </p>
+      <ul class="socials" aria-label="Redes sociales">
+        <li>
+          <a href="https://instagram.com" aria-label="Instagram de Olivos Jewelry">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://tiktok.com" aria-label="TikTok de Olivos Jewelry">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 3v10.2a3.3 3.3 0 1 1-3.3-3.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 3c.2 2.5 2 4.3 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/573507302224" aria-label="WhatsApp de Olivos Jewelry">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M9 9c.5 2.5 2.5 4.5 5 5l1.2-1.2-1.8-.9-.8.6c-.9-.4-1.6-1.1-2-2l.6-.8L10.3 7.9z" fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h3>Explorar</h3>
+      <ul>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#horarios">Visítanos</a></li>
+        <li><a href="#reserva">Agendar cita</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h3>Contacto</h3>
+      <ul>
+        <li>Calle #5, sector La Integración</li>
+        <li>Barrio Altamira, Ureña, Táchira</li>
+        <li><a href="tel:+573507302224">+57 (350) 730 2224</a></li>
+        <li><a href="mailto:contacto@olivosjewelry.com">contacto@olivosjewelry.com</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer__col site-footer__col--wide">
+      <h3>Novedades y lanzamientos</h3>
+      <p>Suscríbete y sé la primera en conocer nuestras nuevas piezas,
+        colecciones de temporada y promociones exclusivas.</p>
+      <form class="newsletter" action="mailto:contacto@olivosjewelry.com" method="post" enctype="text/plain">
+        <label class="sr-only" for="nl-email">Tu email</label>
+        <input id="nl-email" type="email" name="email" placeholder="tu@email.com" required />
+        <button type="submit" class="btn btn--primary">Suscribirme</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container site-footer__legal">
+    <p>&copy; 2026 Olivos Jewelry. Todos los derechos reservados.</p>
+    <p><a href="#">Privacidad</a> · <a href="#">Términos</a> · Hecho con brillo en Ureña.</p>
+  </div>
+</footer>
+</body>
+</html>
