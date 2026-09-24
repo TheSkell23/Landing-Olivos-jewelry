@@ -543,7 +543,7 @@ body:has(.theme-toggle-input:checked) .theme-toggle .icon--moon {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=2000&q=80");
+  background-image: url("https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=2000&q=80");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -847,7 +847,7 @@ body:has(.theme-toggle-input:checked) .theme-toggle .icon--moon {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=2000&q=80");
+  background-image: url("https://images.unsplash.com/photo-1611591475871-2ee3fbd2a99c?auto=format&fit=crop&w=2000&q=80");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1456,4 +1456,19 @@ html:has(.theme-toggle-input:checked) {
 .hero,
 .parallax {
   background-color: #14261c;
+}
+
+/* =========================================================
+   REFUERZO: header nunca más ancho que la pantalla
+   ========================================================= */
+.site-header__inner { min-width: 0; }
+.brand { min-width: 0; }
+
+@media (max-width: 899px) {
+  .site-header__actions .btn { display: none !important; }
+}
+
+@media (max-width: 380px) {
+  .brand__tag { display: none; }
+  .brand__mark { width: 34px; height: 34px; }
 }
