@@ -543,7 +543,7 @@ body:has(.theme-toggle-input:checked) .theme-toggle .icon--moon {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=2000&q=80");
+  background-image: url("imgs/TIENDA.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
