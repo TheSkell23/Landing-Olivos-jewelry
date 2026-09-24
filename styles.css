@@ -1435,3 +1435,25 @@ html, body {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* =========================================================
+   FIX: líneas/huecos de 1px en los bordes (algunos teléfonos)
+   ========================================================= */
+html {
+  background: var(--cream);
+}
+html:has(.theme-toggle-input:checked) {
+  background: #16201a;
+}
+
+/* Los fondos con zoom/transform dejaban un borde sin cubrir por redondeo de píxeles */
+.hero__bg,
+.parallax__bg {
+  inset: -2px;
+}
+
+/* Si aún queda un hueco, se ve oscuro y no blanco */
+.hero,
+.parallax {
+  background-color: #14261c;
+}
