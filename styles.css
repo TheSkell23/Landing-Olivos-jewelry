@@ -1364,3 +1364,74 @@ body:has(.theme-toggle-input:checked) .theme-toggle .icon--moon {
     background-attachment: scroll;
   }
 }
+
+/* =========================================================
+   AJUSTES MÓVIL
+   ========================================================= */
+html, body {
+  overflow-x: clip;
+}
+
+@media (max-width: 899px) {
+  /* El header no cabe en teléfonos: se oculta el botón (ya está en el menú móvil) */
+  .site-header__inner { gap: var(--space-3); }
+  .site-header__actions .btn { display: none; }
+
+  .hero { min-height: auto; }
+
+  /* background-attachment: fixed falla en móviles */
+  .hero__bg,
+  .parallax__bg { background-attachment: scroll; }
+
+  .btn { white-space: normal; }
+
+  /* La animación por scroll deja bloques altos casi invisibles (parecen espacios vacíos) */
+  .section > .container > * { animation: none; }
+}
+
+@media (max-width: 639px) {
+  .section { padding-block: 3rem; }
+}
+
+/* =========================================================
+   TABS DEL CATÁLOGO (sin JS)
+   ========================================================= */
+.menu-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.menu-tabs__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-tabs__label {
+  padding: .6rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+
+.menu-tabs__label:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.menu-tabs__input:checked + .menu-tabs__label {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.menu-tabs__input:focus-visible + .menu-tabs__label {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
