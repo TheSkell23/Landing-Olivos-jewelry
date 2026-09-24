@@ -1485,3 +1485,33 @@ html:has(.theme-toggle-input:checked) {
 .nav-desktop a::after {
   bottom: -6px;
 }
+
+/* =========================================================
+   FIX: más aire en teléfonos (textos muy pegados a los bordes)
+   ========================================================= */
+@media (max-width: 639px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  .site-header__inner {
+    gap: var(--space-4);
+  }
+
+  .brand {
+    gap: var(--space-4);
+  }
+
+  .parallax {
+    padding-block: 5rem;
+  }
+
+  .parallax__quote p {
+    font-size: 1.6rem;
+    line-height: 1.35;
+  }
+
+  .section__title {
+    line-height: 1.15;
+  }
+}
