@@ -1515,3 +1515,26 @@ html:has(.theme-toggle-input:checked) {
     line-height: 1.15;
   }
 }
+
+/* =========================================================
+   FIX: textos sobre fotos siempre claros (también en modo noche)
+   En modo noche --white y --accent-soft se vuelven oscuros,
+   así que sobre las fotos se usan colores fijos.
+   ========================================================= */
+.hero,
+.parallax,
+.parallax__quote p,
+.btn--ghost-light {
+  color: #fffdf9;
+}
+
+.btn--ghost-light:hover {
+  background: #fffdf9;
+  color: #1f2f25;
+}
+
+.hero__title em,
+.parallax__quote em,
+.eyebrow--light {
+  color: #cfe4d3;
+}
